@@ -18,8 +18,12 @@ def files():
         file_name = input("enter the file name : ")
         file = open(file_name,"r")
         file.read()
+        return True
     except:
         print("the file you enter is invalid please enter the valid name ")
-        files()
+        return False
 
+for i in range(0,3):
+    if files():
+        break
 files()     
