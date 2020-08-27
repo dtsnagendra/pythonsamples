@@ -34,7 +34,7 @@ while select!= 0:
     elif select==3:
         print("Result: ",value.mul())
     elif select==4:
-        print("Result: ",round(value.div(),2))
+        print("Result: ",value.div())
     elif select==0:
         print("Exit!")
     else:
