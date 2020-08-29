@@ -18,6 +18,7 @@ class cal:
   
 x = int(input("Enter first number: "))
 y = int(input("Enter second number: "))
+
 value=cal(x,y)
 select = 1
 while select!= 0:
@@ -34,7 +35,12 @@ while select!= 0:
     elif select==3:
         print("Result: ",value.mul())
     elif select==4:
-        print("Result: ",value.div())
+        if value.y==0:
+            print("zero can't be taken")
+            value.x = int(input("Enter first number: "))
+            value.y = int(input("Enter second number: "))
+        else:
+            print("Result: ",value.div())
     elif select==0:
         print("Exit!")
     else:
